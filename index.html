@@ -3,8 +3,6 @@
     <head>
         <title>>>>> Gruas Reynaldo <<<<<<</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta name="description" content="www.gruasreinaldo.cl" />
-        <link rel="stylesheet" type="text/css" href="css/estilo-main.css">    
     </head>
     <body>
         <div class="section black" id="section1">
@@ -20,60 +18,6 @@
                     <li><a href="#section3">3</a></li>
                 </ul>
             </div>
-           
-           
         </div>
-        <div class="section white" id="section2">
-            <h2>Section 2</h2>
-            <p>
-                ‘A fathomless and boundless deep,
-                There we wander, there we weep;
-                On the hungry craving wind
-                My Spectre follows thee behind.
-
-            </p>
-            <ul class="nav">
-                <li><a href="#section1">1</a></li>
-                <li>2</li>
-                <li><a href="#section3">3</a></li>
-            </ul>
-        </div>
-        <div class="section black" id="section3">
-            <h2>Section 3</h2>
-            <p>
-                ‘He scents thy footsteps in the snow
-                Wheresoever thou dost go,
-                Thro’ the wintry hail and rain.
-                When wilt thou return again?
-
-            </p>
-            <ul class="nav">
-                <li><a href="#section1">1</a></li>
-                <li><a href="#section2">2</a></li>
-                <li>3</li>
-            </ul>
-        </div>
-
-        <!-- The JavaScript -->
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>		
-        <script type="text/javascript" src="jquery.easing.1.3.js"></script>
-        <script type="text/javascript">
-            $(function() {
-                $('ul.nav a').bind('click',function(event){
-                    var $anchor = $(this);
-                    
-                    $('html, body').stop().animate({
-                        scrollTop: $($anchor.attr('href')).offset().top
-                    }, 1500,'easeInOutExpo');
-                    /*
-                    if you don't want to use the easing effects:
-                    $('html, body').stop().animate({
-                        scrollTop: $($anchor.attr('href')).offset().top
-                    }, 1000);
-                    */
-                    event.preventDefault();
-                });
-            });
-        </script>
     </body>
 </html>
